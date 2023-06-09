@@ -8,7 +8,7 @@ resource "aws_lambda_function" "example_lambda" {
   handler          = var.lambda_handler
   runtime          = var.lambda_runtime
   filename         = "lambda_function.py" 
-  #source_code_hash = filebase64sha256("lambda_function.zip")
+  source_code_hash = filebase64sha256("lambda_function.py")
 }
 
 resource "aws_iam_role" "lambda_role" {
