@@ -13,7 +13,7 @@ resource "aws_lambda_function" "example_lambda" {
   role             = aws_iam_role.lambda_role.arn
   handler          = var.lambda_handler
   runtime          = var.lambda_runtime
-  filename         = "lambda_function.py" 
+  filename         = "${path.module}/python/lambda_function.py" 
   source_code_hash = filebase64sha256("lambda_function.py")
 }
 
