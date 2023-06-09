@@ -32,4 +32,4 @@ variable "lambda_runtime" {
   description = "Lambda function runtime"
   type        = string
   default     = "python3.8"
-}
+} 
