@@ -1,3 +1,5 @@
-aws_region = "ap-south-1"
+aws_region            = "ap-south-1"
+lambda_role_name      = "lambda-role"
+lambda_function_name  = "example_lambda_function"
 lambda_s3_bucket      = "lambda_s3_bucket"
-lambda_s3_key         = "s3_key"
+lambda_s3_key         = "s3-key"
