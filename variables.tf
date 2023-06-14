@@ -33,3 +33,15 @@ variable "lambda_runtime" {
   type        = string
   default     = "python3.8"
 } 
+
+variable "lambda_s3_bucket" {
+  description = "S3 bucket name for the Lambda function deployment package"
+  type        = string
+  default     = "lambda_s3_bucket"
+}
+
+variable "lambda_s3_key" {
+  description = "Object key (file path) for the Lambda function deployment package in the S3 bucket"
+  type        = string
+  default     = "s3_key"
+}
