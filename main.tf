@@ -17,6 +17,10 @@ resource "aws_lambda_function" "example_lambda" {
   #source_code_hash = filebase64sha256("lambda_function.py")
 }
 
+ # Use S3 bucket as the deployment package source
+  s3_bucket        = var.lambda_s3_bucket
+  s3_key           = var.lambda_s3_key
+
 resource "aws_iam_role" "lambda_role" {
   name = var.lambda_role_name
 
